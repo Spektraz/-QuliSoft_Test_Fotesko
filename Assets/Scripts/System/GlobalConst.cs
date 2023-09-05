@@ -13,6 +13,8 @@ namespace System
         public const string Win = "Win";
         public const string Loose = "Loose";
         [Header("Speed")]
+        public const int SpeedCar = 150;
+        public const int RotationCar = 300;
         public const float FrontSpeed = 1f;
         public const float StopSpeed = -1f;
     }

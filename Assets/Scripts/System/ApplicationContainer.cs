@@ -3,26 +3,19 @@ namespace System
     public class ApplicationContainer : Singleton<ApplicationContainer>
     {
         private EventHolder m_eventHolder = null;
-        private ResultGame m_resultGame = null;
         public EventHolder EventHolder
         {
             get { return m_eventHolder; }
         }
-        public ResultGame ResultGame
-        {
-            get { return m_resultGame; }
-        }
         private void Awake()
         {
-            Construct(new EventHolder(), new ResultGame());
+            Construct(new EventHolder());
         }
         private void Construct(
-            EventHolder eventHolder,
-            ResultGame resultGame
+            EventHolder eventHolder
         )
         {
             m_eventHolder = eventHolder;
-            m_resultGame = resultGame;
         }
     }
 }

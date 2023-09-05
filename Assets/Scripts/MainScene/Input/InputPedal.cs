@@ -23,7 +23,7 @@ namespace MainScene.Input
 
         private void Result()
         {
-            ApplicationContainer.Instance.EventHolder.OnButtonPressEvent.Invoke(m_nameButton, m_buttonPressed);
+            ApplicationContainer.Instance.EventHolder.OnButtonPress(m_nameButton, m_buttonPressed);
         }
     }
 }

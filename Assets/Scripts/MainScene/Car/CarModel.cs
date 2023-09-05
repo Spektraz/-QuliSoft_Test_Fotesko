@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace MainScene.Car
@@ -9,8 +10,8 @@ namespace MainScene.Car
         [SerializeField] private Rigidbody2D m_backTireRB;
         [SerializeField] private Rigidbody2D m_carRB;
         [Header("Speed info")]
-        [SerializeField] private float m_speed = 150f;
-        [SerializeField] private float m_rotationSpeed = 300f;
+        [SerializeField] private float m_speed = GlobalConst.SpeedCar;
+        [SerializeField] private float m_rotationSpeed = GlobalConst.RotationCar;
         
         
         public Rigidbody2D FrontTireRB => m_frontTireRB;
